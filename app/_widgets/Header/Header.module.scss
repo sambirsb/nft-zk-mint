@@ -1,0 +1,30 @@
+@import '/app/_shared/styles/vars.scss';
+
+.main {
+    background-color: $gray0;
+    box-shadow: 0px 5px 10px $gray20;
+
+    p {
+        font-size: 26px;
+        font-weight: 500;
+    }
+}
+
+.con {
+    height: 20 * $point;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 10 * $point;
+
+    a {
+        &:hover {
+            color: $primary50;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+$point: 4px;
+
+$primary10: var(--primary10);
+$primary20: var(--primary20);
+$primary30: var(--primary30);
+$primary40: var(--primary40);
+$primary50: var(--primary50);
+$primary60: var(--primary60);
+$primary70: var(--primary70);
+$primary80: var(--primary80);
+$primary90: var(--primary90);
+$primary100: var(--primary100);
+
+$gray0: var(--gray0);
+$gray10: var(--gray10);
+$gray20: var(--gray20);
+$gray30: var(--gray30);
+$gray40: var(--gray40);
+$gray50: var(--gray50);
+$gray60: var(--gray60);
+$gray70: var(--gray70);
+$gray80: var(--gray80);
+$gray90: var(--gray90);
+$gray100: var(--gray100);
+
+@mixin ui($property, $count) {
+    #{$property}: calc(#{$count} * #{$point});
+}
+
+@mixin flexVerticalSpace($count) {
+    display: flex;
+    flex-direction: column;
+    gap: calc(#{$count} * #{$point});
+}
+
+@mixin flexHorizontalSpace($count) {
+    display: flex;
+    gap: calc(#{$count} * #{$point});
+}
